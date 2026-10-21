@@ -1,8 +1,8 @@
-# derivatives-pricing-engine
+# Derivatives-Pricing-engine
 ## Black-Scholes, Monte Carlo & Heston Models
 ### Overview
 
-This project develops a Python-based quantitative framework for pricing European call and put options using three approaches: the Black–Scholes analytical model, Monte Carlo simulation, and the Heston stochastic volatility model.
+This project develops a Python-based quantitative framework for pricing European call and put options using three approaches: the Black-Scholes analytical model, Monte Carlo simulation, and the Heston stochastic volatility model.
 
 The framework uses historical SPY market data and U.S. Treasury yields to estimate model inputs, calculate option Greeks, and evaluate pricing results through numerical validation, put-call parity, and Monte Carlo convergence analysis.
 
@@ -23,25 +23,25 @@ Project Objectives
 -Compare pricing results under different volatility assumptions.
 
 
-##Models and Methods
+## Models and Methods
 
-1. ###Black–Scholes Model
+### Black–Scholes Model
 
 Calculates theoretical European call and put prices using the underlying asset price, strike price, time to maturity, risk-free interest rate, volatility, and continuous dividend yield.
 
-2. ###Monte Carlo Simulation
+### Monte Carlo Simulation
 
 Simulates future stock prices under risk-neutral geometric Brownian motion. Option payoffs are calculated at maturity and discounted to the present.
 
 The analysis includes estimated option prices, standard errors, confidence intervals, and convergence comparisons across different simulation sizes.
 
-3. ###Heston Stochastic Volatility Model
+### Heston Stochastic Volatility Model
 
 Models volatility as a random process rather than assuming it remains constant. Monte Carlo simulation estimates European option prices using correlated stock-price and variance processes.
 
 The Heston parameters are illustrative and are not calibrated to live options market data.
 
-4.### Option Greeks
+### Option Greeks
 
 Calculates the main Black-Scholes sensitivities:
 
@@ -57,7 +57,7 @@ Rho: Sensitivity to changes in the risk-free interest rate.
 
 Finite-difference checks are used to assess selected analytical Greek calculations.
 
-##Market Data
+## Market Data
 
 The project uses the following data sources and methods:
 
@@ -70,11 +70,11 @@ Historical volatility: Estimated from rolling daily log returns and annualized u
 Historical volatility is used as a modeling input. It differs from implied volatility, which is derived from market option prices.
 
 
-##Validation and Analysis
+## Validation and Analysis
 
 The pricing framework is evaluated through:
 
-Put–call parity checks.
+Put-call parity checks.
 
 Comparisons between Monte Carlo estimates and Black–Scholes prices.
 
@@ -89,7 +89,7 @@ A Heston special-case comparison with Black–Scholes under constant-volatility 
 Comparisons of model prices and sensitivities.
 
 
-###Technologies
+### Technologies
 
 Python
 
@@ -103,14 +103,9 @@ SciPy
 
 yfinance
 
-pandas-datareader or another suitable FRED data retrieval method
-
-Jupyter Notebook
-
-Getting Started
 
 
-##Limitations
+## Limitations
 
 Strike prices and maturities are modeling assumptions rather than inputs from a complete live options chain.
 
@@ -124,7 +119,7 @@ Monte Carlo estimates are subject to sampling error.
 
 Results may vary with simulation settings and the date on which market data are retrieved.
 
-##Future Improvements
+## Future Improvements
 
 Calibrate the Heston model using observed market option prices.
 
@@ -134,6 +129,6 @@ Compare pricing models across different market conditions.
 
 Expand automated tests for pricing functions, Greeks, and model validation.
 
-##Disclaimer
+## Disclaimer
 
 This project is intended for educational and research purposes only. The model outputs are theoretical estimates and should not be considered financial advice or trading recommendations.
