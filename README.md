@@ -123,11 +123,6 @@ Results may vary with simulation settings and the date on which market data are 
 
 Calibrate the Heston model using observed market option prices.
 
-Incorporate live options-chain data and implied volatility.
-
-Compare pricing models across different market conditions.
-
-Expand automated tests for pricing functions, Greeks, and model validation.
 
 ## Disclaimer
 
